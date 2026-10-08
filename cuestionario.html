@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario | Descubre Mascota</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f0e8;
+            color: #333;
+        }
+
+        header {
+            background-color: #6b8e23;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .contenedor {
+            width: 85%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #6b8e23;
+            text-align: center;
+        }
+
+        .pregunta {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            border-left: 5px solid #6b8e23;
+        }
+
+        .pregunta h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            display: block;
+            margin: 25px auto 10px;
+            padding: 15px 30px;
+            background-color: #6b8e23;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #556b2f;
+        }
+
+        .resultado {
+            margin-top: 25px;
+            padding: 20px;
+            text-align: center;
+            background-color: #e8f5e9;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            display: none;
+        }
+
+        .regresar {
+            background-color: #8b4513;
+        }
+
+        .regresar:hover {
+            background-color: #6f360f;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Descubre Mascota, Jalisco</h1>
+    <p>Cuestionario sobre nuestro Pueblo Mágico</p>
+</header>
+
+<div class="contenedor">
+
+    <h2>¿Cuánto sabes sobre Mascota?</h2>
+
+    <form id="cuestionario">
+
+        <div class="pregunta">
+            <h3>1. ¿En qué estado de México se encuentra Mascota?</h3>
+
+            <label>
+                <input type="radio" name="p1" value="correcta">
+                Jalisco
+            </label>
+
+            <label>
+                <input type="radio" name="p1" value="incorrecta">
+                Michoacán
+            </label>
+
+            <label>
+                <input type="radio" name="p1" value="incorrecta">
+                Colima
+            </label>
+
+            <label>
+                <input type="radio" name="p1" value="incorrecta">
+                Nayarit
+            </label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>2. ¿Qué tipo de destino es Mascota?</h3>
+
+            <label>
+                <input type="radio" name="p2" value="correcta">
+                Pueblo Mágico
+            </label>
+
+            <label>
+                <input type="radio" name="p2" value="incorrecta">
+                Playa turística
+            </label>
+
+            <label>
+                <input type="radio" name="p2" value="incorrecta">
+                Ciudad fronteriza
+            </label>
+
+            <label>
+                <input type="radio" name="p2" value="incorrecta">
+                Zona industrial
+            </label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>3. ¿Qué actividad puedes realizar en Mascota?</h3>
+
+            <label>
+                <input type="radio" name="p3" value="correcta">
+                Conocer lugares naturales y culturales
+            </label>
+
+            <label>
+                <input type="radio" name="p3" value="incorrecta">
+                Visitar un parque de diversiones de Disney
+            </label>
+
+            <label>
+                <input type="radio" name="p3" value="incorrecta">
+                Esquiar en nieve
+            </label>
+
+            <label>
+                <input type="radio" name="p3" value="incorrecta">
+                Visitar un arrecife de coral
+            </label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>4. ¿Qué tipo de gastronomía puedes encontrar en Mascota?</h3>
+
+            <label>
+                <input type="radio" name="p4" value="correcta">
+                Comida tradicional de la región
+            </label>
+
+            <label>
+                <input type="radio" name="p4" value="incorrecta">
+                Comida exclusivamente japonesa
+            </label>
+
+            <label>
+                <input type="radio" name="p4" value="incorrecta">
+                Comida exclusivamente italiana
+            </label>
+
+            <label>
+                <input type="radio" name="p4" value="incorrecta">
+                Ninguna comida tradicional
+            </label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>5. ¿Qué te gustaría conocer en Mascota?</h3>
+
+            <label>
+                <input type="checkbox" name="p5">
+                Lugares turísticos
+            </label>
+
+            <label>
+                <input type="checkbox" name="p5">
+                Gastronomía
+            </label>
+
+            <label>
+                <input type="checkbox" name="p5">
+                Naturaleza
+            </label>
+
+            <label>
+                <input type="checkbox" name="p5">
+                Cultura y tradiciones
+            </label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>6. ¿Has visitado Mascota?</h3>
+
+            <label>
+                <input type="radio" name="p6" value="si">
+                Sí
+            </label>
+
+            <label>
+                <input type="radio" name="p6" value="no">
+                No
+            </label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>7. ¿Cómo conociste Mascota?</h3>
+
+            <select name="p7">
+                <option value="">Selecciona una opción</option>
+                <option>Por familiares o amigos</option>
+                <option>Redes sociales</option>
+                <option>Internet</option>
+                <option>Por la escuela</option>
+                <option>Otro</option>
+            </select>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>8. ¿Recomendarías visitar Mascota?</h3>
+
+            <label>
+                <input type="radio" name="p8" value="si">
+                Sí
+            </label>
+
+            <label>
+                <input type="radio" name="p8" value="no">
+                No
+            </label>
+        </div>
+
+
+        <div class="pregunta">
+            <h3>9. Escribe una palabra que describa a Mascota:</h3>
+
+            <input type="text" name="p9" placeholder="Escribe tu respuesta">
+        </div>
+
+
+        <div class="pregunta">
+            <h3>10. ¿Te gustaría visitar Mascota en el futuro?</h3>
+
+            <label>
+                <input type="radio" name="p10" value="si">
+                Sí
+            </label>
+
+            <label>
+                <input type="radio" name="p10" value="no">
+                No
+            </label>
+        </div>
+
+
+        <button type="submit">Enviar cuestionario</button>
+
+    </form>
+
+    <div class="resultado" id="resultado"></div>
+
+    <button class="regresar" onclick="location.href='index.html'">
+        Regresar a la página principal
+    </button>
+
+</div>
+
+
+<script>
+
+    document.getElementById("cuestionario").addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        let puntos = 0;
+
+        let respuestas = ["p1", "p2", "p3", "p4"];
+
+        respuestas.forEach(function(pregunta) {
+
+            let respuesta = document.querySelector(
+                'input[name="' + pregunta + '"]:checked'
+            );
+
+            if (respuesta && respuesta.value === "correcta") {
+                puntos++;
+            }
+
+        });
+
+        let resultado = document.getElementById("resultado");
+
+        let mensaje = "";
+
+        if (puntos === 4) {
+            mensaje = "¡Excelente! Conoces muy bien Mascota, Jalisco.";
+        }
+        else if (puntos === 3) {
+            mensaje = "¡Muy bien! Tienes buenos conocimientos sobre Mascota.";
+        }
+        else if (puntos === 2) {
+            mensaje = "¡Bien! Todavía puedes aprender más sobre Mascota.";
+        }
+        else if (puntos === 1) {
+            mensaje = "Puedes aprender mucho más sobre este hermoso Pueblo Mágico.";
+        }
+        else {
+            mensaje = "Te invitamos a conocer más sobre Mascota, Jalisco.";
+        }
+
+        resultado.innerHTML =
+            "Tu puntuación fue: " + puntos + " de 4<br><br>" + mensaje;
+
+        resultado.style.display = "block";
+
+    });
+
+</script>
+
+</body>
+</html>
